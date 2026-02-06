@@ -23,7 +23,7 @@ RUN /install_frappe ${FRAPPE_BRANCH} && \
   /install_app barcode_shrdc https://github.com/${GITHUB_OWNER}/ERPNext-Barcode-Integration master && \
   /install_app autocount https://github.com/${GITHUB_OWNER}/ERPNext-Autocount-Integration master && \
   /install_app short_courses https://github.com/Shakila-Sahira/ERPNext-Short-Courses && \
-  /install_app shopify https://github.com/msf4-0/ERPNext-Shopify && \
+  /install_app shopify https://github.com/msf4-0/shopify-ERPnext main && \
   /prepare_production
 
 FROM frappe/erpnext-nginx:${FRAPPE_BRANCH}
